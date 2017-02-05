@@ -3,6 +3,7 @@
 html, body 
 	padding: 0;
 	margin: 0;
+	height: 100%;
 
 *
 	font-family: "Roboto", Arial, sans-serif;
@@ -14,8 +15,26 @@ a
 	margin: 0 auto;
 	
 #wrapper
-	margin-top: 100px;
+	padding-top: 20px;
 	
+html 
+	background-color : #1C2439;
+	
+	
+body	
+	height: 2500px;
+	
+	
+#wrapper
+	background-image: url(../img/soldier.jpg)
+	background-position: center top;
+	background-repeat: no-repeat;
+	height : 500px;
+
+body
+	background-image: url(../img/night_forest.jpg);
+	background-position: center bottom; 
+	background-repeat: no-repeat;
 	
 #primary-menu
 	background-color: #FF9700;
@@ -27,12 +46,20 @@ a
 	&:before
 		content: " ";
 		top: 0;
-		left: -74px;
+		left: -75px;
 		position: absolute;
 		border: 37.5px solid transparent;
 		border-right-color: #FF9700;
 		border-bottom-color: #FF9700;
 		 
+	&:after
+		content: " ";
+		top: 0;
+		right: -75px;
+		position: absolute;
+		border: 37.5px solid transparent;
+		border-left-color: #FF9700;
+		border-bottom-color: #FF9700;
 	
 	
 	ul 
@@ -49,7 +76,7 @@ a
 			font-size: 16px;
 				
 			a 
-				color: #333
+				color: #fff
 				text-decoration: none;
 				height: 75px;
 				line-height: 75px;
@@ -76,6 +103,23 @@ a
 				&:hover::before
 					opacity: 1;
 					
+#secondary-menu	
+	background-color: #FF9700;
+	height: 75px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 50px;
+	
+	ul 
+		padding: 0;
+		margin: 0;
+	
+		li	
+			display: inline-block;
+			list-style: none;
+			margin-right: 20px; 
+			list-style: none;
+	
 	
 	
 	
